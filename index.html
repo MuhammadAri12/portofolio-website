@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Muhammad Al Qadri — Graphic Designer Portfolio</title>
+  <meta name="description" content="Portfolio of Muhammad Al Qadri — Graphic Designer & Multimedia student: digital branding, motion graphics, and visual identity. Telkom University." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <!-- ===== Orbs glassmorphism background ===== -->
+  <div class="orbs" aria-hidden="true">
+    <span class="orb orb--1"></span>
+    <span class="orb orb--2"></span>
+    <span class="orb orb--3"></span>
+    <span class="orb orb--4"></span>
+  </div>
+
+  <!-- ===== Preloader ===== -->
+  <div class="preloader" id="preloader" aria-hidden="true">
+    <div class="preloader__inner">
+      <span class="preloader__name">AL QADRI</span>
+      <span class="preloader__bar"><span></span></span>
+    </div>
+  </div>
+
+  <!-- ===== Custom cursor (desktop only) ===== -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+  <!-- ===== Navbar ===== -->
+  <header class="nav" id="nav">
+    <div class="nav__inner glass">
+      <a href="#hero" class="nav__logo" data-hover>AL QADRI<span>.</span></a>
+      <button class="nav__toggle" id="navToggle" aria-label="Open menu" data-hover>
+        <span></span><span></span>
+      </button>
+    </div>
+    <nav class="nav__links" id="navLinks">
+      <a href="#hero" data-hover>Home</a>
+      <a href="#about" data-hover>About</a>
+      <a href="#experience" data-hover>Experience</a>
+      <a href="#work" data-hover>Works</a>
+      <a href="#motion" data-hover>Motion</a>
+      <a href="#certificates" data-hover>Certificates</a>
+      <a href="#contact" data-hover>Contact</a>
+    </nav>
+  </header>
+
+  <!-- ===== Hero ===== -->
+  <section class="hero" id="hero">
+    <canvas id="bg3d" aria-hidden="true"></canvas>
+    <div class="hero__vignette" aria-hidden="true"></div>
+
+    <div class="container hero__content">
+      <p class="hero__eyebrow reveal reveal--center">Graphic Designer — Visual &amp; Motion</p>
+      <h1 class="hero__title">
+        <span class="hero__line reveal"><span>Muhammad</span></span>
+        <span class="hero__line reveal"><span><em>Al&nbsp;Qadri</em></span></span>
+      </h1>
+      <p class="hero__sub reveal reveal--right">
+        A Telkom University student dedicated to <strong>digital branding, graphic
+        design, and motion graphics</strong> — building brand identities that make
+        an impact through visual aesthetics &amp; content strategy.
+      </p>
+
+      <!-- Floating glass chips (in-flow, never overlap) -->
+      <div class="hero__chips reveal reveal--down" aria-hidden="true">
+        <span class="chip glass">✦ Digital Branding</span>
+        <span class="chip glass">▶ Motion Graphics</span>
+        <span class="chip glass">◐ Visual Identity</span>
+        <span class="chip glass">✎ Content Creation</span>
+      </div>
+
+      <div class="hero__cta reveal">
+        <a href="#work" class="btn btn--solid glass" data-hover>View Works</a>
+        <a href="#contact" class="btn btn--ghost glass" data-hover>Contact Me</a>
+      </div>
+
+      <div class="hero__stats glass reveal">
+        <div class="stat"><strong data-count="40">0</strong><span>+</span><small>Designs Done</small></div>
+        <div class="stat"><strong data-count="15">0</strong><small>Project Types</small></div>
+        <div class="stat"><strong data-count="2">0</strong><span>+</span><small>Internships</small></div>
+        <div class="stat"><strong data-count="5">0</strong><span>+</span><small>Leadership Roles</small></div>
+      </div>
+    </div>
+    <div class="hero__scroll" aria-hidden="true">
+      <span></span><span class="hero__scroll-txt">Scroll</span>
+    </div>
+  </section>
+
+  <!-- ===== Marquee ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>Digital Branding</span><i>◆</i>
+      <span>Motion Graphics</span><i>◆</i>
+      <span>Visual Identity</span><i>◆</i>
+      <span>Greeting Card</span><i>◆</i>
+      <span>Merchandise</span><i>◆</i>
+      <span>Content Creation</span><i>◆</i>
+      <span>Landing Page</span><i>◆</i>
+      <span>Basic SEO</span><i>◆</i>
+      <span>Digital Branding</span><i>◆</i>
+      <span>Motion Graphics</span><i>◆</i>
+      <span>Visual Identity</span><i>◆</i>
+      <span>Greeting Card</span><i>◆</i>
+      <span>Merchandise</span><i>◆</i>
+      <span>Content Creation</span><i>◆</i>
+      <span>Landing Page</span><i>◆</i>
+      <span>Basic SEO</span><i>◆</i>
+    </div>
+  </div>
+
+  <!-- ===== About ===== -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__num reveal">01</span>
+        <h2 class="section__title reveal reveal--right">About Me</h2>
+      </div>
+      <div class="about__grid">
+        <div class="about__photo reveal-3d" data-tilt>
+          <div class="about__photo-frame glass">
+            <img src="PAS%20FOTO/PAS%20FOTO.jpeg" alt="Muhammad Al Qadri profile photo" loading="lazy" />
+          </div>
+          <div class="about__badge glass">
+            <span class="about__badge-dot"></span>
+            Open for work
+          </div>
+        </div>
+        <div class="about__text">
+          <p class="reveal">
+            Hi! I'm <strong>Muhammad Al Qadri</strong>, a <strong>Telkom University</strong> student
+            majoring in <strong>Multimedia Engineering Technology</strong>. I'm enthusiastic about
+            unique ideas, fresh visual trends, and exploring new creative concepts.
+          </p>
+          <p class="reveal">
+            I'm used to building impactful brand identities by combining
+            <strong>visual aesthetics and content strategy</strong> — proven through internships in
+            the telecommunication &amp; logistics industries, plus a strong organizational leadership track record.
+          </p>
+          <ul class="about__skills reveal">
+            <li data-hover>Adobe Family</li>
+            <li data-hover>Figma</li>
+            <li data-hover>Canva</li>
+            <li data-hover>Motion Graphics</li>
+            <li data-hover>Basic SEO</li>
+            <li data-hover>NFT Design</li>
+            <li data-hover>UI/UX Basics</li>
+            <li data-hover>HTML &amp; CSS</li>
+          </ul>
+          <div class="about__edu">
+            <div class="edu__item glass reveal reveal--down" data-tilt>
+              <span class="edu__year">2022 — 2026</span>
+              <strong>Telkom University</strong>
+              <small>Multimedia Engineering Technology · GPA 3.22/4.00</small>
+            </div>
+            <div class="edu__item glass reveal" data-tilt>
+              <span class="edu__year">2019 — 2022</span>
+              <strong>SMK Telkom Makassar</strong>
+              <small>Computer &amp; Network Engineering · 95.28/100</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Experience ===== -->
+  <section class="section experience" id="experience">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__num reveal">02</span>
+        <h2 class="section__title reveal reveal--right">Experience</h2>
+      </div>
+      <div class="exp__group">
+        <h3 class="exp__label reveal"><span>◆</span> Internships</h3>
+        <div class="timeline">
+          <div class="timeline__item reveal" data-tilt>
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card glass">
+              <div class="timeline__head">
+                <h3>Intern — Marketing Graphic Designer</h3>
+                <span class="timeline__period">Sep 2025 — Feb 2026</span>
+              </div>
+              <p class="timeline__org">PT. Salam Pacific Indonesia Lines · Surabaya</p>
+              <ul>
+                <li>Redesigned the company E-Book layout, internal bulletin, and branding assets such as banners &amp; stationery.</li>
+                <li>Produced motion graphics and GIF animations for digital media content and engagement.</li>
+                <li>Developed branch merchandise designs, apparel mockups (shirt/polo), and container branding visuals.</li>
+                <li>Created holiday campaign materials, landing page designs, certificate templates, and greeting cards.</li>
+              </ul>
+            </div>
+          </div>
+          <div class="timeline__item reveal" data-tilt>
+            <div class="timeline__dot" aria-hidden="true"></div>
+            <div class="timeline__card glass">
+              <div class="timeline__head">
+                <h3>Intern — Product &amp; Customer Experience</h3>
+                <span class="timeline__period">Jan — Mar 2021</span>
+              </div>
+              <p class="timeline__org">PT. Telkomsel Area Pamasuka · Makassar</p>
+              <ul>
+                <li>Contributed to script writing, production supervision, and presenting project results to mentors.</li>
+                <li>Ran test calls to 5 call centers, evaluating response, empathy, and information delivery quality.</li>
+                <li>Managed an educational Ring Back Tone (RBT) project with teachers as voice talents.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp__group">
+        <h3 class="exp__label reveal"><span>◆</span> Organizations</h3>
+        <div class="org__grid">
+          <div class="org__card glass reveal" data-tilt>
+            <div class="org__head">
+              <h3>HIMATREDIA</h3>
+              <small>Multimedia Engineering Technology Student Association · Bandung</small>
+            </div>
+            <div class="org__role">
+              <strong>Secretary General</strong>
+              <small>Feb 2024 — Nov 2024</small>
+            </div>
+            <div class="org__role">
+              <strong>Project Lead — Training &amp; Introduction of Multimedia Systems 7.0</strong>
+              <small>Sep 2023 — Nov 2023</small>
+            </div>
+            <div class="org__role">
+              <strong>Head of Publicity &amp; Documentation Division — Cadre Education</strong>
+              <small>Nov 2023</small>
+            </div>
+            <div class="org__role">
+              <strong>Staff — Cadre Development Department</strong>
+              <small>Sep 2023</small>
+            </div>
+          </div>
+
+          <div class="org__card glass reveal" data-tilt>
+            <div class="org__head">
+              <h3>Himpunan Mahasiswa Islam</h3>
+              <small>FIT Telkom Commissariat · Bandung</small>
+            </div>
+            <div class="org__role">
+              <strong>Project Lead — Silaturahmi Akbar of the 2025 Telkom Applied Science Alumni Commissariat</strong>
+              <small>Feb 2025</small>
+            </div>
+            <div class="org__role">
+              <strong>Project Lead — Basic Training LK-1 HMI, FIT Telkom Commissariat</strong>
+              <small>Feb 2025</small>
+            </div>
+            <div class="org__role">
+              <strong>PTKP Division Member &amp; General Secretary</strong>
+              <small>Sep 2024 — Mar 2025</small>
+            </div>
+          </div>
+
+          <div class="org__card glass reveal" data-tilt>
+            <div class="org__head">
+              <h3>Keluarga Besar Mahasiswa Sulawesi</h3>
+              <small>Student Organization (UK) · KBMS Diaspora Board 2025</small>
+            </div>
+            <div class="org__role">
+              <strong>Coordinator Lead — Makrab &amp; Management Upgrading, KBMS 2025 Diaspora Board</strong>
+              <small>May 2025</small>
+            </div>
+            <div class="org__role">
+              <strong>Head of Resource Management Bureau</strong>
+              <small>Jan 2025 — Jan 2026</small>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp__group">
+        <h3 class="exp__label reveal"><span>◆</span> Personal Project</h3>
+        <div class="org__grid">
+          <div class="org__card glass reveal" data-tilt>
+            <div class="org__head">
+              <h3>Blackjagger Collective — Event Branding</h3>
+              <small>Independent Project · Jan — Feb 2025</small>
+            </div>
+            <p class="social__desc">
+              Built a full visual identity for a music event collective from zero —
+              gothic monogram logo, neon-on-dark art direction, and a complete
+              on-ground identity system.
+            </p>
+            <div class="org__role">
+              <strong>ID Card &amp; Lanyard</strong>
+              <small>Participant identity system</small>
+            </div>
+            <div class="org__role">
+              <strong>Concert Ticketing Design</strong>
+              <small>Ticket series &amp; social media visuals</small>
+            </div>
+            <a class="social__link" href="#work" data-hover>View the Works →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp__group">
+        <h3 class="exp__label reveal"><span>◆</span> SEO &amp; Content Writing</h3>
+        <div class="seo__card glass reveal reveal--right" data-tilt>
+          <div class="seo__info">
+            <h3>Contributing Writer — SPIL Corporate Blog</h3>
+            <p class="timeline__org">PT. Salam Pacific Indonesia Lines · spil.co.id/blogs</p>
+            <p>
+              10+ SEO-optimized articles on logistics — from keyword research and
+              on-page structure to content optimization, turning organic search
+              into a real channel for brand presence.
+            </p>
+            <a class="btn btn--ghost glass seo__btn" href="https://www.spil.co.id/blogs/author/arri/" target="_blank" rel="noopener" data-hover>
+              View Author Page →
+            </a>
+          </div>
+          <ul class="seo__list">
+            <li>
+              <a href="https://www.spil.co.id/blogs/overload-adalah/" target="_blank" rel="noopener" data-hover>
+                <span>Overload Adalah: Panduan Risiko, dan Solusi Logistik Aman</span>
+                <small>Feb 18, 2026</small>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.spil.co.id/blogs/trucking-artinya/" target="_blank" rel="noopener" data-hover>
+                <span>Trucking Artinya: Panduan Lengkap Peran Logistik Terintegrasi</span>
+                <small>Feb 18, 2026</small>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.spil.co.id/blogs/e-booking-kargo/" target="_blank" rel="noopener" data-hover>
+                <span>Strategi E-Booking Kargo: Efisiensi Logistik Digital di Indonesia</span>
+                <small>Feb 13, 2026</small>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.spil.co.id/blogs/surat-jalan/" target="_blank" rel="noopener" data-hover>
+                <span>Surat Jalan: Panduan Fungsi, dan Jenis Administrasi Logistik</span>
+                <small>Feb 12, 2026</small>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.spil.co.id/blogs/ekspedisi-jakarta-medan/" target="_blank" rel="noopener" data-hover>
+                <span>Ekspedisi Jakarta Medan: Panduan Strategis Logistik Terintegrasi</span>
+                <small>Feb 9, 2026</small>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="exp__group">
+        <h3 class="exp__label reveal"><span>◆</span> Social Media Management</h3>
+        <div class="org__grid">
+          <div class="org__card social__card glass reveal" data-tilt>
+            <div class="org__head">
+              <h3>Instagram — @soot.telyu</h3>
+              <small>Content Manager &amp; Full Editor</small>
+            </div>
+            <p class="social__desc">
+              Managing the account end-to-end — setting the content direction and
+              handling all editing for its needs, from visual design to video editing.
+            </p>
+            <a class="social__link" href="https://www.instagram.com/soot.telyu/" target="_blank" rel="noopener" data-hover>Visit Account →</a>
+          </div>
+          <div class="org__card social__card glass reveal" data-tilt>
+            <div class="org__head">
+              <h3>TikTok — @lokalaraid</h3>
+              <small>Content Manager &amp; Full Editor</small>
+            </div>
+            <p class="social__desc">
+              Managing the account end-to-end — setting the content direction and
+              handling all editing for its needs, from visual design to video editing.
+            </p>
+            <a class="social__link" href="https://www.tiktok.com/@lokalaraid" target="_blank" rel="noopener" data-hover>Visit Account →</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="exp__group">
+        <h3 class="exp__label reveal"><span>◆</span> NFT &amp; Digital Collectibles</h3>
+        <div class="org__grid">
+          <div class="org__card social__card glass reveal" data-tilt>
+            <img class="nft__preview" src="web/nft/iamgoat.jpg" alt="I Am Goat — NFT preview" loading="lazy" />
+            <div class="org__head">
+              <h3>I Am Goat</h3>
+              <small>NFT Collection · OpenSea</small>
+            </div>
+            <p class="social__desc">
+              "Goats Are Just Animals In General // 666" — a satirical character
+              series of 12 items released on OpenSea.
+            </p>
+            <a class="social__link" href="https://opensea.io/collection/iamgoat666" target="_blank" rel="noopener" data-hover>View Collection →</a>
+          </div>
+          <div class="org__card social__card glass reveal" data-tilt>
+            <img class="nft__preview" src="web/nft/09-43.jpg" alt="09:43 — NFT preview" loading="lazy" />
+            <div class="org__head">
+              <h3>09:43</h3>
+              <small>NFT Collection · OpenSea</small>
+            </div>
+            <p class="social__desc">
+              "Abstract that sees the life of the world" — an abstract series
+              with 9 editions exploring mood and everyday moments.
+            </p>
+            <a class="social__link" href="https://opensea.io/collection/09-43" target="_blank" rel="noopener" data-hover>View Collection →</a>
+          </div>
+          <div class="org__card social__card glass reveal" data-tilt>
+            <img class="nft__preview" src="web/nft/top-coin.jpg" alt="Top Coin — NFT preview" loading="lazy" />
+            <div class="org__head">
+              <h3>Top Coin</h3>
+              <small>NFT Collection · OpenSea</small>
+            </div>
+            <p class="social__desc">
+              A playful 10-edition collectible series designed for fun —
+              light-hearted digital art with a meme-culture twist.
+            </p>
+            <a class="social__link" href="https://opensea.io/collection/top-coin" target="_blank" rel="noopener" data-hover>View Collection →</a>
+          </div>
+          <div class="org__card social__card glass reveal" data-tilt>
+            <img class="nft__preview" src="web/nft/my-computer.png" alt="My Computer — NFT preview" loading="lazy" />
+            <div class="org__head">
+              <h3>My Computer</h3>
+              <small>hic et nunc · Tezos · 50 Editions</small>
+            </div>
+            <p class="social__desc">
+              "A computer with an interesting history" — single artwork minted
+              with 50 editions on hic et nunc, December 2021.
+            </p>
+            <a class="social__link" href="https://objkt.com/tokens/hicetnunc/602797" target="_blank" rel="noopener" data-hover>View Token →</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Work ===== -->
+  <section class="section work" id="work">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__num reveal">03</span>
+        <h2 class="section__title reveal reveal--right">Selected Works</h2>
+      </div>
+      <div class="work__filters reveal" id="filters">
+        <button class="filter glass is-active" data-filter="all" data-hover>All</button>
+        <button class="filter glass" data-filter="branding" data-hover>Branding</button>
+        <button class="filter glass" data-filter="corporate" data-hover>Corporate</button>
+        <button class="filter glass" data-filter="art" data-hover>Artwork</button>
+        <button class="filter glass" data-filter="motion" data-hover>Motion &amp; GIF</button>
+      </div>
+      <div class="work__grid" id="workGrid"><!-- rendered by JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== Motion highlight ===== -->
+  <section class="section motion" id="motion">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__num reveal">04</span>
+        <h2 class="section__title reveal reveal--right">Motion Showcase</h2>
+      </div>
+      <div class="motion__grid">
+        <figure class="motion__item glass reveal-3d" data-tilt>
+          <video src="Magang/Motion%20Graphic/Instant%20Quotes%20Fast.mp4" muted loop autoplay playsinline></video>
+          <figcaption>Motion Graphic — Instant Quotes</figcaption>
+        </figure>
+        <figure class="motion__item glass reveal-3d" data-tilt>
+          <video src="Magang/Lunar%20Feed/Imlek.mp4" muted loop autoplay playsinline></video>
+          <figcaption>Social Feed Animation — Lunar New Year</figcaption>
+        </figure>
+      </div>
+      <div class="gif__strip reveal" id="gifStrip"><!-- rendered by JS --></div>
+    </div>
+  </section>
+
+  <!-- ===== Certificates ===== -->
+  <section class="section certificates" id="certificates">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__num reveal">05</span>
+        <h2 class="section__title reveal reveal--right">Online Certificates</h2>
+      </div>
+      <p class="cert__lead reveal">
+        Verified online credentials — click any card to open the official
+        certificate or badge.
+      </p>
+      <div class="cert__grid">
+        <a class="cert__card glass reveal" data-tilt target="_blank" rel="noopener" data-hover
+           href="https://www.credly.com/badges/62038c36-094a-4bb7-baeb-20e1a340a818/public_url">
+          <span class="cert__issuer">Cisco · Credly Badge</span>
+          <h3>Networking Essentials</h3>
+          <p>Student-level credential from Cisco — networking fundamentals,
+            addressing &amp; services, device configuration, and troubleshooting,
+            with up to 19 labs and 24 Packet Tracer activities.</p>
+          <div class="cert__foot">
+            <small>Issued April 18, 2022</small>
+            <span class="social__link">View Badge →</span>
+          </div>
+        </a>
+        <a class="cert__card glass reveal" data-tilt target="_blank" rel="noopener" data-hover
+           href="https://badges.plus.columbia.edu/3e1d290b-408d-4f61-8067-db93e2c6587e">
+          <span class="cert__issuer">Columbia+ · Digital Badge</span>
+          <h3>The Art of Opinion Writing</h3>
+          <p>Badge from Columbia University's Columbia+ program on crafting
+            sharp, persuasive opinion pieces.</p>
+          <div class="cert__foot">
+            <small>Verified badge</small>
+            <span class="social__link">View Badge →</span>
+          </div>
+        </a>
+        <a class="cert__card glass reveal" data-tilt target="_blank" rel="noopener" data-hover
+           href="https://static.semrush.com/academy/certificates/9d9ca18308/muhammad-al-qadri_25.pdf">
+          <span class="cert__issuer">Semrush Academy · Certificate</span>
+          <h3>Keyword Research Essentials</h3>
+          <p>Semrush Academy exam certificate on keyword research — finding,
+            validating, and mapping keywords for content that ranks.</p>
+          <div class="cert__foot">
+            <small>Valid through Jan 30, 2027</small>
+            <span class="social__link">View Certificate →</span>
+          </div>
+        </a>
+        <a class="cert__card glass reveal" data-tilt target="_blank" rel="noopener" data-hover
+           href="https://static.semrush.com/academy/certificates/25fc594918/muhammad-al-qadri_25.pdf">
+          <span class="cert__issuer">Semrush Academy · Certificate</span>
+          <h3>Off-Page SEO and AI Search Essentials</h3>
+          <p>Semrush Academy exam certificate on off-page strategy and getting
+            content cited in AI-powered search results.</p>
+          <div class="cert__foot">
+            <small>Valid through Feb 5, 2027</small>
+            <span class="social__link">View Certificate →</span>
+          </div>
+        </a>
+        <a class="cert__card glass reveal" data-tilt target="_blank" rel="noopener" data-hover
+           href="https://static.semrush.com/academy/certificates/0ded34ce61/muhammad-al-qadri_2.pdf">
+          <span class="cert__issuer">Semrush Academy · Certificate</span>
+          <h3>Content-Led SEO with Brian Dean</h3>
+          <p>Semrush Academy exam certificate on the Content-Led SEO framework
+            taught directly by Brian Dean.</p>
+          <div class="cert__foot">
+            <small>Valid through Jan 29, 2027</small>
+            <span class="social__link">View Certificate →</span>
+          </div>
+        </a>
+        <a class="cert__card glass reveal" data-tilt target="_blank" rel="noopener" data-hover
+           href="https://www.canva.com/design-school/certification-award/68996b52-fc7e-4eb6-ba93-fccfe23f9c4b">
+          <span class="cert__issuer">Canva Design School · Certification</span>
+          <h3>Create Scroll Stopping Content</h3>
+          <p>Canva Design School certification on producing social content that
+            grabs attention in the feed.</p>
+          <div class="cert__foot">
+            <small>Certification award</small>
+            <span class="social__link">View Certificate →</span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Contact ===== -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="section__head">
+        <span class="section__num reveal">06</span>
+        <h2 class="section__title reveal reveal--right">Let's Work Together</h2>
+      </div>
+      <p class="contact__lead reveal reveal--center">
+        Have a project or just want to chat? Reach me through any channel below.
+      </p>
+      <div class="contact__links reveal">
+        <a href="mailto:mh.alqadri12@gmail.com" class="contact__card glass" data-hover data-tilt>
+          <span class="contact__icon">✉</span>
+          <span class="contact__label">Email</span>
+          <span class="contact__value">mh.alqadri12@gmail.com</span>
+        </a>
+        <a href="https://wa.me/6281355955254" target="_blank" rel="noopener" class="contact__card glass" data-hover data-tilt>
+          <span class="contact__icon">◈</span>
+          <span class="contact__label">WhatsApp</span>
+          <span class="contact__value">+62 813 5595 5254</span>
+        </a>
+        <a href="https://www.linkedin.com/in/al-qadri/" target="_blank" rel="noopener" class="contact__card glass" data-hover data-tilt>
+          <span class="contact__icon">in</span>
+          <span class="contact__label">LinkedIn</span>
+          <span class="contact__value">linkedin.com/in/al-qadri</span>
+        </a>
+        <a href="https://www.behance.net/MAQ-Studio" target="_blank" rel="noopener" class="contact__card glass" data-hover data-tilt>
+          <span class="contact__icon">Bē</span>
+          <span class="contact__label">Behance</span>
+          <span class="contact__value">behance.net/MAQ-Studio</span>
+        </a>
+        <div class="contact__card glass" data-hover data-tilt>
+          <span class="contact__icon">◎</span>
+          <span class="contact__label">Location</span>
+          <span class="contact__value">Bandung, West Java</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Footer ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span>© 2026 Muhammad Al Qadri — Portfolio</span>
+      <a href="#hero" data-hover>Back to top ↑</a>
+    </div>
+  </footer>
+
+  <!-- ===== Lightbox ===== -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" id="lbClose" aria-label="Close" data-hover>&times;</button>
+    <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous" data-hover>&#8592;</button>
+    <div class="lightbox__stage" id="lbStage"></div>
+    <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next" data-hover>&#8594;</button>
+    <div class="lightbox__caption" id="lbCaption"></div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
